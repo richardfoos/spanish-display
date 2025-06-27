@@ -13,24 +13,38 @@
       color: #001858;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      min-height: 100vh;
     }
 
     h1 {
       font-size: 5vw;
-      margin-bottom: 4vh;
+      margin: 2vh 0 1vh;
     }
 
     .phrase {
-      font-size: 7vw;
+      font-size: 6.5vw;
       font-weight: bold;
-      margin-bottom: 6vh;
+      margin: 1vh 0 3vh;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      max-width: 90vw;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     button {
+      margin-top: 3vh;
       font-size: 4.5vw;
       padding: 1rem 2rem;
       background-color: #8bd3dd;
@@ -38,7 +52,6 @@
       border-radius: 12px;
       color: #001858;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
 
     button:hover {
@@ -52,7 +65,13 @@
 </head>
 <body>
   <h1>Frase de la Semana</h1>
-  <div class="phrase">Comer21 Moscas</div>
+  <div class="phrase">Comer Moscas</div>
+
+  <div class="images">
+    <img src="Comer%20moscas_files/image001.png" alt="Ilustración 1">
+    <img src="Comer%20moscas_files/image002.jpg" alt="Ilustración 2">
+  </div>
+
   <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
   <audio id="audio">
     <source src="https://drive.google.com/uc?export=download&id=1FYZjL91pLN4W2CvWygcK36WppRNCtUer" type="audio/mpeg">
