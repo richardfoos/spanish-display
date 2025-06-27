@@ -7,49 +7,53 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+      padding: 2vh 4vw;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #fef6e4;
       color: #001858;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      min-height: 100vh;
     }
 
     h1 {
-      font-size: 5vw;
-      margin: 2vh 0 1vh;
-    }
-
-    .phrase {
       font-size: 6.5vw;
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+    }
+
+    .subheading {
+      font-size: 4.5vw;
+      margin-bottom: 2vh;
+      color: #555;
+    }
+
+    .explanation {
+      font-size: 4vw;
+      max-width: 700px;
+      margin: 3vh auto;
+      line-height: 1.5;
+    }
+
+    .example {
+      font-size: 4.5vw;
+      margin: 4vh 0 1vh;
       font-weight: bold;
-      margin: 1vh 0 3vh;
     }
 
-    .images {
-      display: flex;
-      flex-direction: column;
-      gap: 2vh;
-      max-width: 90vw;
-    }
-
-    .images img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    .translation {
+      font-size: 4vw;
+      margin-bottom: 4vh;
+      color: #444;
     }
 
     button {
-      margin-top: 3vh;
-      font-size: 4.5vw;
+      font-size: 4vw;
       padding: 1rem 2rem;
-      background-color: #8bd3dd;
       border: none;
       border-radius: 12px;
+      background-color: #8bd3dd;
       color: #001858;
       cursor: pointer;
     }
@@ -64,13 +68,18 @@
   </style>
 </head>
 <body>
-  <h1>Frase de la Semana</h1>
-  <div class="phrase">Comer Moscas</div>
+  <h1>Comer moscas</h1>
+  <div class="subheading">Literal translation: To eat flies</div>
+  <div class="subheading">English equivalent: To speak aimlessly</div>
 
-  <div class="images">
-    <img src="Comer%20moscas_files/image001.png" alt="Ilustración 1">
-    <img src="Comer%20moscas_files/image002.jpg" alt="Ilustración 2">
+  <div class="explanation">
+    We all have a friend that’ll start a story about going to the grocery store,
+    but somehow manage to turn it into an hour-long autobiography.
+    A person who <em>comer moscas</em> is someone who often goes off on tangents or speaks aimlessly.
   </div>
+
+  <div class="example">Sara siempre come moscas</div>
+  <div class="translation">(Sara always goes off on a tangent)</div>
 
   <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
   <audio id="audio">
