@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comer Moscas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    body {
+      margin: 0;
+      padding: 2vh 2vw;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6e4;
+      color: #001858;
+    }
+
+    .container {
+      max-width: 95vw;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 6vw;
+      margin: 3vh 0 1vh;
+    }
+
+    .subheading {
+      font-size: 4vw;
+      color: #555;
+      margin-bottom: 1vh;
+    }
+
+    .description {
+      font-size: 4vw;
+      margin: 3vh 0;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    .example {
+      font-size: 4.5vw;
+      font-weight: bold;
+      margin-top: 4vh;
+    }
+
+    .translation {
+      font-size: 4vw;
+      color: #444;
+      margin-bottom: 4vh;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2vh;
+      margin-bottom: 4vh;
+    }
+
+    .images img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    button {
+      font-size: 4.5vw;
+      padding: 1rem 2rem;
+      background-color: #8bd3dd;
+      border: none;
+      border-radius: 12px;
+      color: #001858;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5dbbc8;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Comer moscas</h1>
+    <div class="subheading">Literal translation: To eat flies</div>
+    <div class="subheading">English equivalent: To speak aimlessly</div>
+
+    <div class="description">
+      We all have a friend that’ll start a story about going to the grocery store,
+      but somehow manage to turn it into an hour-long autobiography. A person who <em>comer moscas</em> 
+      is someone who often goes off on tangents or speaks aimlessly.
+    </div>
+
+    <div class="example">Sara siempre come moscas</div>
+    <div class="translation">(Sara always goes off on a tangent)</div>
+
+    <div class="images">
+      <img src="Comer%20moscas_files/image001.png" alt="Illustration 1">
+      <img src="Comer%20moscas_files/image002.jpg" alt="Illustration 2">
+    </div>
+
+    <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
+    <audio id="audio">
+      <source src="https://drive.google.com/uc?export=download&id=1FYZjL91pLN4W2CvWygcK36WppRNCtUer" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
+</body>
+</html>
